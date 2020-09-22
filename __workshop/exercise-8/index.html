@@ -1,1 +1,48 @@
-<!-- ...crickets... -->
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Registration form</h1>
+    <form>
+        <label for="username">Username</label>
+        <input type="text" name='username' required>
+        <label for="password">password</label>
+        <input type="password" required>
+        <label for="Email">Email</label>
+        <input type="text" name='Email' required>
+    </form>
+    <h2>Which taxi do you require</h2>
+    <form>
+        <input type="radio" name='taxi' value="car" required>
+        <label for="car">Car</label>
+        <input type="radio" name='taxi' value="van" required>
+        <label for="Van">Van</label>
+        <input type="radio" name='taxi' value="Tuk_tuk" required>
+        <label for="Tuk_tuk">Tuk Tuk</label>  
+    </form>
+    <h2>Choose your extras</h2>
+    <form>
+        <input type="checkbox" value="Baby_seat">
+        <label for="Baby_seat">Baby seat</label>
+        <input type="checkbox" value="Wheelchair_access">
+        <label for="Wheelchair_access">Wheelchaire access</label>
+        <input type="checkbox" value="Privacy_windows">
+        <label for="Privacy_windows">Privacy windows</label>
+    </form>
+    <h2>Where would you like us to pick you?</h2>
+    <form>
+        <label for="location">Pickup Location:</label>
+        <select name="location" id="location">
+            <option value="home" placeholder="Select One">home</option>
+            <option value="office">office</option>
+            <option value="gym">gym</option>
+        </select>
+    </form>
+    <h2>Additional Instructions</h2>
+    <form>
+        <label for="add_instructions">Special:</label>
+        <textarea name="location" id="location" placeholder="provide special instructions here"></textarea>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
+
